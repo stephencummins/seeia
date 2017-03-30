@@ -68,7 +68,7 @@ namespace SEEIA
 		{
 			try
 			{
-				user = await client.LoginAsync(view, MobileServiceAuthenticationProvider.Facebook);
+				user = await client.LoginAsync(view, MobileServiceAuthenticationProvider.MicrosoftAccount);
 			}
 			catch (Exception ex)
 			{
