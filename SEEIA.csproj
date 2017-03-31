@@ -45,8 +45,9 @@
     <WarningLevel>4</WarningLevel>
     <MtouchDebug>true</MtouchDebug>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: stephencummins@gmail.com (8NSC9LM7UF)</CodesignKey>
     <MtouchArch>ARMv7</MtouchArch>
+    <CodesignProvision>iOS Team Provisioning Profile: net.azure-mobile.SEEIA</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -97,9 +98,6 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Themes.TrackBeam">
-      <HintPath>..\Components\trackbeamtheme-1.5.2\lib\ios-unified\Xamarin.Themes.TrackBeam.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Themes.Core">
       <HintPath>..\packages\Xamarin.Themes.Core.1.0.0.1\lib\Xamarin.iOS10\Xamarin.Themes.Core.dll</HintPath>
     </Reference>
@@ -135,12 +133,5 @@
     <BundleResource Include="Resources\Default-Landscape.png" />
     <BundleResource Include="Resources\Default-Portrait%402x.png" />
     <BundleResource Include="Resources\Default-Landscape%402x.png" />
-    <BundleResource Include="Resources\SIA-Logo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <XamarinComponentReference Include="trackbeamtheme">
-      <Version>1.5.2</Version>
-      <Visible>False</Visible>
-    </XamarinComponentReference>
   </ItemGroup>
 </Project>
