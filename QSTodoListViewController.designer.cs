@@ -4,25 +4,29 @@
 // actions declared in your storyboard file.
 // Manual changes to this file will not be maintained.
 //
-using System;
 using Foundation;
-using UIKit;
+using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace SEEIA
 {
-	[Register ("QSTodoListViewController")]
-	partial class QSTodoListViewController
-	{
-		[Outlet]
-		UIKit.UITextField itemText { get; set; }
+    [Register ("QSTodoListViewController")]
+    partial class QSTodoListViewController
+    {
+        [Outlet]
+        UIKit.UITextField itemText { get; set; }
 
-		[Action ("OnAdd:")]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void OnAdd (UIButton sender);
+        [Action ("OnAdd:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void OnAdd (UIKit.UIButton sender);
 
-		void ReleaseDesignerOutlets ()
-		{
-		}
-	}
+        void ReleaseDesignerOutlets ()
+        {
+            if (itemText != null) {
+                itemText.Dispose ();
+                itemText = null;
+            }
+        }
+    }
 }

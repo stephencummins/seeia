@@ -115,6 +115,7 @@
     </Compile>
     <Compile Include="QSTodoService.cs" />
     <Compile Include="ToDoItem.cs" />
+    <Compile Include="settings.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard" />
